@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 @RestController
 public class Controller {
 
-    Logger logger = LoggerFactory.getLogger(Controller.class);
+    private final Logger logger = LoggerFactory.getLogger(Controller.class);
 
     @GetMapping
     public String home() {
@@ -38,5 +38,4 @@ public class Controller {
         logger.debug("User: {}", user);
         return "Debugging";
     }
-
 }
